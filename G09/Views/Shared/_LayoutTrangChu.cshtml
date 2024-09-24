@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodG09 Review</title>
+    <link rel="stylesheet" href="../LayoutTrangChu/sass/vender/bootstrap.css">
+    <link rel="stylesheet" href="../LayoutTrangChu/sass/vender/bootstrap.min.css">
+    <link rel="stylesheet" href="../LayoutTrangChu/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../LayoutTrangChu/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css">
+    <link rel="stylesheet" href="../LayoutTrangChu/sass/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/emojione/assets/3.1/sprites/emojione-sprite-32.css">
+
+     <link rel="stylesheet" href="../css/create.css" />
+    <style>
+        .profile_container {
+            padding: 20px 10px 0;
+            margin: auto;
+            /* max-width: 700px; */
+        }
+
+        #create_modal .modal-body #image-container {
+            position: static;
+            width: 100%;
+            height: 100%;
+        }
+        /* Modal Header Styling */
+        .modal-header {
+            background: linear-gradient(45deg, #fdc830, #f37335);
+            color: white;
+            border-bottom: none;
+            margin-bottom: 3px;
+        }
+
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .close {
+            color: white;
+            opacity: 1;
+        }
+
+        /* Modal Body Styling */
+        .modal-body {
+            background-color: #f8f9fa;
+            padding: 2rem;
+        }
+
+        .form-control {
+            border-radius: 0.25rem;
+        }
+
+        .textarea-custom {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 0.25rem;
+            resize: none; /* Prevents resizing */
+        }
+
+        /* Image Preview Styling */
+        #imagePreview {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%; /* Đảm bảo chiều cao của div đủ để căn giữa theo chiều dọc */
+        }
+
+        .imgthumbnail {
+            border-radius: 50%;
+            width: 300px; /* Adjust size as needed */
+            height: 300px; /* Adjust size as needed */
+            object-fit: cover;
+            display: block;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Button Styling */
+        .btn-primary {
+            background-color: #f37335;
+            border-color: #f37335;
+        }
+
+            .btn-primary:hover {
+                background-color: #fdc830;
+                border-color: #fdc830;
+            }
+
+        /* Form Layout */
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            font-weight: bold;
+        }
+
+        /* btn more*/
+        .more {
+            position: relative;
+            display: inline-block;
+        }
+
+        .more img {
+            cursor: pointer;
+            width: 24px; /* Kích thước biểu tượng */
+            height: 24px; /* Kích thước biểu tượng */
+        }
+
+        .menu-content {
+            display: none;
+            position: absolute;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px; /* Bo góc menu */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng đổ */
+            min-width: 150px; /* Kích thước tối thiểu của menu */
+            z-index: 1000;
+            top: 100%;
+            right: 0;
+        }
+
+        .menu-content button {
+            display: block;
+            width: 100%;
+            text-align: left;
+            border: none;
+            background: none;
+            padding: 10px;
+            font-size: 16px;
+            color: #333;
+            cursor: pointer;
+            border-radius: 8px; /* Bo góc nút */
+        }
+
+        .menu-content button:hover {
+            background-color: #f8f9fa; /* Màu nền khi hover */
+            color: #007bff; /* Màu chữ khi hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="post_page">
+        <!--***** nav menu start ****** -->
+        <div class="nav_menu">
+            <div class="fix_top">
+                <!-- nav for big->medium screen -->
+                <div class="nav">
+                    <div class="logo">
+                        <a href="./home.html">
+                            <img class="d-block d-lg-none small-logo" src="../LayoutTrangChu/img/foodgo9.png" alt="logo">
+                            <img class="d-none d-lg-block" src="../LayoutTrangChu/img/foodgo9.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="menu" style="margin-bottom: 180px;">
+                        <ul>
+                            <li>
+                                <a class="active" asp-controller="TrangChu" asp-action="ListBaiViet">
+                                    <img src="../LayoutTrangChu/img/accueil.png">
+                                    <span class="d-none d-lg-block ">Trang Chủ</span>
+                                </a>
+                            </li>
+                            <li id="search_icon">
+                                <a href="#">
+                                    <img src="../LayoutTrangChu/img/search.png">
+                                    <span class="d-none d-lg-block search">Tìm Kiếm </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a asp-controller="KhamPha" asp-action="Index">
+                                    <img src="../LayoutTrangChu/img/menu.png">
+                                    <span class="d-none d-lg-block ">Khám Phá</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#create_modal">
+                                    <img src="../LayoutTrangChu/img/tab.png">
+                                    <span class="d-none d-lg-block ">Tạo Mới</span>
+                                </a>
+                                
+                            </li>
+                            <li>
+                                
+                                <a class="active" asp-controller="TrangCaNhan" asp-action="TrangCaNhan">
+                                    <img class="circle story" src="@Context.Session.GetString("UrlAnhDD")">
+                                    <span class="d-none d-lg-block ">Trang Cá Nhân</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- nav for small screen  -->
+                <div class="nav_sm">
+                    <div class="content">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img class="logo" src="../LayoutTrangChu/img/logo_menu.png">
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">
+                                        <span>Following</span>
+                                        <img src="../LayoutTrangChu/img/add-friend.png">
+                                    </a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">
+                                        <span>Favorites</span>
+                                        <img src="../LayoutTrangChu/img/star.png">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="left">
+                         
+                            <div class="notifications notification_icon">
+                                <a href="./notification.html">
+                                    <img src="../LayoutTrangChu/img/love.png">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- nav for ex-small screen  -->
+                <div class="nav_xm">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="logo" src="../LayoutTrangChu/img/logo_menu.png">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">
+                                    <span>Following</span>
+                                    <img src="../LayoutTrangChu/img/add-friend.png">
+                                </a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    <span>Favorites</span>
+                                    <img src="../LayoutTrangChu/img/star.png">
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="left">
+
+                        <img src="../LayoutTrangChu/img/send.png">
+                        <a href="./notification.html">
+                            <img class="notification_icon" src="../LayoutTrangChu/img/love.png">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- menu in the botton for smal screen  -->
+            <div class="nav_bottom">
+                <a href="./home.html"><img src="../LayoutTrangChu/img/accueil.png"></a>
+                <a href="./explore.html"><img src="../LayoutTrangChu/img/compass.png"></a>
+                <a href="./reels.html"><img src="../LayoutTrangChu/img/video.png"></a>
+                <a href="#" data-bs-toggle="modal" data-bs-target="#create_modal"><img src="../LayoutTrangChu/img/tab.png"></a>
+                <a href="profile.html"><img class="circle story" src="../LayoutTrangChu/img/profile_img.jpg"></a>
+            </div>
+        </div>
+        <!-- search  -->
+        <div id="search" class="search_section">
+            <h2>Search</h2>
+            <form method="post">
+                <input type="text" placeholder="Search">
+            </form>
+            <div class="find">
+                <div class="desc">
+                    <h4>Recent</h4>
+                    <p><a href="#">Clear all</a></p>
+                </div>
+                <div class="account">
+                    <div class="cart">
+                        <div>
+                            <div class="img">
+                                <img src="../LayoutTrangChu/img/profile_img.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">Zineb_essoussi</p>
+                                <p class="second_name">Zim Ess</p>
+                            </div>
+                        </div>
+                        <div class="clear">
+                            <a href="#">X</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- search  -->
+        <!-- notification -->
+        <div id="notification" class="notification_section">
+            <h2>Notifications</h2>
+            <div class="notifications">
+                <div class="notif follow_notif">
+                    <div class="cart">
+                        <div>
+                            <div class="img">
+                                <img src="../LayoutTrangChu/img/profile_img.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">
+                                    Zineb_essoussi
+                                    <span class="desc">started following you.</span>
+                                    <span class="time">2h</span>
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="follow_you">
+                            <button class="follow_text">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="notif follow_notif">
+                    <div class="cart">
+                        <div>
+                            <div class="img">
+                                <img src="../LayoutTrangChu/img/profile_img.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">
+                                    Zineb_essoussi
+                                    <span class="desc">started following you.</span>
+                                    <span class="time">2h</span>
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="follow_you">
+                            <button class="follow_text">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="notif story_notif">
+                    <div class="cart">
+                        <div>
+                            <div class="img">
+                                <img src="../LayoutTrangChu/img/profile_img.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="info">
+                                    <p class="name">
+                                        Zineb_essoussi
+                                        <span class="desc">liked your story.</span>
+                                        <span class="time">2d</span>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="story_like">
+                            <img src="../LayoutTrangChu/img/img2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="notif follow_notif">
+                    <div class="cart">
+                        <div>
+                            <div class="img">
+                                <img src="../LayoutTrangChu/img/profile_img.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">
+                                    Zineb_essoussi
+                                    <span class="desc">started following you.</span>
+                                    <span class="time">2h</span>
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="follow_you">
+                            <button class="follow_text">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="notif story_notif">
+                    <div class="cart">
+                        <div>
+                            <div class="img">
+                                <img src="../LayoutTrangChu/img/profile_img.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="info">
+                                    <p class="name">
+                                        Zineb_essoussi
+                                        <span class="desc">liked your story.</span>
+                                        <span class="time">2d</span>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="story_like">
+                            <img src="../LayoutTrangChu/img/img2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="notif follow_notif">
+                    <div class="cart">
+                        <div>
+                            <div class="img">
+                                <img src="../LayoutTrangChu/img/profile_img.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">
+                                    Zineb_essoussi
+                                    <span class="desc">started following you.</span>
+                                    <span class="time">2h</span>
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="follow_you">
+                            <button class="follow_text">Follow</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--***** nav menu end ****** -->
+         @RenderBody()
+        
+
+        
+
+        <!--Create model-->
+        <div class="modal fade" id="create_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="createPostModalLabel">Tạo Bài viết mới</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="user-info mb-3">
+                            <img src="@Context.Session.GetString("UrlAnhDD")" alt="Profile Picture">
+                            <span id="username">@Context.Session.GetString("tenND")</span>
+                        </div>
+                        <form id="post-form" style="overflow-x: hidden;" >
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="mb-3">
+                                        <label for="image-upload" class="form-label">Chọn ảnh</label>
+                                        <input type="file" class="form-control" name="image" id="image-upload" accept="image/*" required>
+                                        <div class="mt-3 hide_img" id="image-container"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-section">
+                                        <div class="mb-3">
+                                            <label for="post-type" class="form-label">Chủ đề</label>
+                                            <select class="form-select" name="postType" id="post-type" required>
+                                                <option value="" disabled selected>chọn chủ đề</option>
+                                                @foreach (var loai in @DataService.loaiMonAns())
+                                                {
+                                                        <option value="@loai.MaLoaiMonAn">@loai.TenLoaiMonAn</option>
+                                                }
+
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="post-content" class="form-label">Nội dung</label>
+                                            <textarea class="form-control" name="postContent" id="post-content" rows="4" placeholder="Nôi dung bài viết" required></textarea>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <button id="btn_create" class="btn btn-primary w-100">Hoàn Thành</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="../LayoutTrangChu/owlcarousel/jquery.min.js"></script>
+    <script src="../LayoutTrangChu/owlcarousel/owl.carousel.min.js"></script>
+
+    @* Thêm mới *@
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="../LayoutTrangChu/owlcarousel/jquery.min.js"></script>
+    <script src="../LayoutTrangChu/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../js/TaoBaiViet.js"></script> 
+    <script src="../js/trangCaNhan.js"></script> 
+</body>
+</html>
+

@@ -1,0 +1,114 @@
+﻿@{
+    ViewData["Title"] = "K_TrangCaNhan";
+    Layout = "~/Views/Shared/_LayoutTrangChu.cshtml";
+}@{
+    var reversedBaiViets = ((List<BaiViet>)ViewBag.K_baiV).AsEnumerable().Reverse();
+}
+<style>
+    .modal-footer {
+        display: flex;
+        justify-content: center; /* Căn giữa theo chiều ngang */
+        align-items: center; /* Căn giữa theo chiều dọc (nếu cần) */
+        padding: 1rem; /* Khoảng cách bên trong (tùy chọn) */
+    }
+</style>
+
+<div class="profile_container">
+    <div class="profile_info">
+        <div class="cart">
+            <div class="img" id="imgND">
+                <img src=" @Url.Content(@ViewBag.K_nguoiD.AnhDaiDien)" alt="">
+            </div>
+            <div class="info">
+                <p class="name" id="ten_ND">
+                    @ViewBag.K_nguoiD.TenNguoiDung
+                   
+                </p>
+                <div class="general_info">
+                    <p><span>@ViewBag.K_baiV.Count</span> post</p>
+                    <p><span>@ViewBag.K_SoNguoi_DcTheoDoi</span> followers</p>
+                    <p><span>@ViewBag.K_SoNguoi_DcTheoDoi</span> following</p>
+                </div>
+
+                <p class="desc" id="tieu_Su">
+                    @ViewBag.K_nguoiD.TieuSu
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <hr style="margin-bottom:15px">
+
+    <!--***** posts_container start ****** -->
+    <div class="main_section">
+        <div class="posts_container">
+            <div class="posts" id="posts">
+                @foreach (var baiViet in reversedBaiViets)
+                {
+                    <div class="post" id="post-@baiViet.MaBaiViet">
+                        <div class="info">
+                            <div class="person">
+                                <img src="@Url.Content(baiViet.AnhDaiDien)">
+                                <a>@baiViet.TenNguoiDung</a>
+                                <span class="circle">.</span>
+                                <span>@baiViet.NgayTao.ToString()</span>
+                                <br />
+                                <span style="margin-left: 35px; font-size: small; position: relative; top: -10px;">@baiViet.TenLoaiMonAn</span>
+                            </div>
+                            
+                        </div>
+                        @if (!string.IsNullOrEmpty(baiViet.AnhBaiViet))
+                        {
+                            <div class="image">
+                                <img src="@baiViet.AnhBaiViet">
+                            </div>
+                        }
+                        <div class="desc">
+                            <div class="icons">
+                                <div class="icon_left d-flex">
+                                    <div class="like">
+                                        @if (baiViet.IsLiked)
+                                        {
+                                            <img class="not_loved hide_img button_like" data-mabaiviet="@baiViet.MaBaiViet" data-tennguoidung="@baiViet.MaNguoiDung" src="../LayoutTrangChu/img/love.png">
+                                            <img class="loved display button_like" data-mabaiviet="@baiViet.MaBaiViet" data-tennguoidung="@baiViet.MaNguoiDung" src="../LayoutTrangChu/img/heart.png">
+                                        }
+                                        else
+                                        {
+                                            <img class="not_loved button_like" data-mabaiviet="@baiViet.MaBaiViet" data-tennguoidung="@baiViet.MaNguoiDung" src="../LayoutTrangChu/img/love.png">
+                                            <img class="loved hide_img button_like" data-mabaiviet="@baiViet.MaBaiViet" data-tennguoidung="@baiViet.MaNguoiDung" src="../LayoutTrangChu/img/heart.png">
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="liked">
+                                <a class="bold" id="like-count-@baiViet.MaBaiViet">@baiViet.SoLuongLike likes</a>
+                            </div>
+                            <div class="post_desc">
+                                <p>
+                                    <a class="bold" href="#">@baiViet.TenNguoiDung</a> @baiViet.NoiDung
+                                </p>
+                                <p> Comments </p>
+
+                                @* @foreach (var cmt in cmts)
+                            {
+                            @if (cmt.MaBaiViet == baiViet.MaBaiViet)
+                            {
+                            <p>
+                            <a class="bold" href="#">@cmt.TenNguoiDung</a> @cmt.NoiDung
+                            </p>
+                            }
+                            } *@
+                                <div class="comment-section" data-mabaiviet="@baiViet.MaBaiViet" data-tennguoidung="@baiViet.MaNguoiDung">
+                                    <input type="text" class="commentInput" placeholder="Add a comment..." />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <!--***** posts_container end ****** -->
+    
+
+</div>

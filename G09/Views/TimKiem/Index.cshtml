@@ -1,0 +1,143 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutTrangChu.cshtml";
+    NguoiDung us = ViewBag.us;
+    var cmts = ViewBag.cmts;
+}
+
+@model IEnumerable<BaiViet>
+@Html.AntiForgeryToken()
+
+
+<div class="second_container" style="display:flex;flex-direction:column" >
+
+    <div class="search_bar_main">
+         <form id="searchForm" method="get" action="@Url.Action("Index")" class="input-group_main">
+        <div class="input-group_main">
+            <div class="form-outline_main">
+                <div>
+                    <img src="../LayoutTrangChu/img/search.png" alt="search" class="search-icon">
+                </div>
+                <input type="search" name="searchQuery" id="form1" class="form-control search-input" placeholder="Search" />
+
+            </div>
+        </div>
+        </form>
+
+    </div>
+    <div class="main_section" >
+
+        <div class="posts_container">
+            <div class="posts">
+                @foreach (var baiViet in Model)
+                {
+                    <div class="post" id="post-@baiViet.MaBaiViet">
+                        <div class="info">
+                            <div class="person">
+                                <img src="@Url.Content(baiViet.AnhDaiDien)">
+
+                                <a href="@Url.Action("K_TrangCaNhan", "TrangCaNhan", new { id =  @baiViet.MaNguoiDung})">@baiViet.TenNguoiDung</a>
+                                <span class="circle">.</span>
+                                <span>@baiViet.NgayTao.ToString()</span>
+                                <br />
+                                <span style="margin-left: 35px; font-size: small; position: relative; top: -10px;">@baiViet.TenLoaiMonAn</span>
+                            </div>
+                            <div class="more">
+                                <img src="../LayoutTrangChu/img/show_more.png" alt="show more">
+                            </div>
+                        </div>
+                        @if (!string.IsNullOrEmpty(baiViet.AnhBaiViet))
+                        {
+                            <div class="image">
+                                <img src="@baiViet.AnhBaiViet">
+                            </div>
+                        }
+                        <div class="desc">
+                            <div class="icons">
+                                <div class="icon_left d-flex">
+                                    <div class="like">
+                                        @if (baiViet.IsLiked)
+                                        {
+                                            <img class="not_loved hide_img button_like" data-mabaiviet="@baiViet.MaBaiViet" data-tennguoidung="@baiViet.MaNguoiDung" src="../LayoutTrangChu/img/love.png">
+                                            <img class="loved display button_like" data-mabaiviet="@baiViet.MaBaiViet" data-tennguoidung="@baiViet.MaNguoiDung" src="../LayoutTrangChu/img/heart.png">
+                                        }
+                                        else
+                                        {
+                                            <img class="not_loved button_like" data-mabaiviet="@baiViet.MaBaiViet" data-tennguoidung="@baiViet.MaNguoiDung" src="../LayoutTrangChu/img/love.png">
+                                            <img class="loved hide_img button_like" data-mabaiviet="@baiViet.MaBaiViet" data-tennguoidung="@baiViet.MaNguoiDung" src="../LayoutTrangChu/img/heart.png">
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="liked">
+                                <a class="bold" id="like-count-@baiViet.MaBaiViet">@baiViet.SoLuongLike likes</a>
+                            </div>
+                            <div class="post_desc">
+                                <p>
+                                    <a class="bold" href="#">@baiViet.TenNguoiDung</a> @baiViet.NoiDung
+                                </p>
+                                <p> Comments </p>
+
+                                
+                                <div class="comment-section" data-mabaiviet="@baiViet.MaBaiViet" data-tennguoidung="@baiViet.MaNguoiDung">
+                                    <input type="text" class="commentInput" placeholder="Add a comment..." />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+<!-- Kết quả tìm kiếm (sẽ được hiển thị sau khi tìm kiếm) -->
+
+
+<!-- Followers Container -->
+<div class="followers_container">
+    <!-- The followers container content here -->
+</div>
+
+
+<style>
+    .input-group_main {
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+
+        .input-group_main img {
+            height: 24px;
+            margin-left: 200px;
+            margin-right: 10px; /* Thêm khoảng cách giữa ảnh và input */
+        }
+
+        .input-group_main .form-control {
+            flex: 1; /* Giúp input chiếm không gian còn lại */
+            height: 100%;
+            width: 100%
+        }
+
+    .form-outline_main {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .search_bar_main {
+        width: auto;
+        margin-top: 10px;
+    }
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+            $('.search-input').on('keydown', function (event) {
+                if (event.key === 'Enter') {
+                    event.preventDefault(); // Ngăn không cho form submit mặc định
+                    var searchQuery = $(this).val();
+                    $('#searchForm').submit();
+            });
+    });
+</script>

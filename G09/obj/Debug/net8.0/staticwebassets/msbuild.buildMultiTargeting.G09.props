@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\G09.props" />
+</Project>

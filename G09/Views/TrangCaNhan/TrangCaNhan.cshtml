@@ -1,0 +1,230 @@
+﻿@{
+    ViewData["Title"] = "TrangCaNhan";
+    Layout = "~/Views/Shared/_LayoutTrangChu.cshtml";
+}@{
+    var reversedBaiViets = ((List<BaiViet>)ViewBag.baiV).AsEnumerable().Reverse();
+}
+<style>
+    .modal-footer {
+        display: flex;
+        justify-content: center; /* Căn giữa theo chiều ngang */
+        align-items: center; /* Căn giữa theo chiều dọc (nếu cần) */
+        padding: 1rem; /* Khoảng cách bên trong (tùy chọn) */
+    }
+</style>
+
+<div class="profile_container">
+    <div class="profile_info">
+        <div class="cart">
+            <div class="img" id="imgND">
+                <img src=" @Url.Content(@ViewBag.nguoiD.AnhDaiDien)" alt="" >
+            </div>
+            <div class="info">
+                <p class="name" id="ten_ND">
+                    @ViewBag.nguoiD.TenNguoiDung
+                    <button class="edit_profile" data-toggle="modal" data-target="#editProfile">
+                        chỉnh sửa thông tin cá nhân
+                    </button>
+                </p>
+                <div class="general_info">
+                    <p><span>@ViewBag.baiV.Count</span> post</p>
+                    <p><span>@ViewBag.SoNguoi_DcTheoDoi</span> followers</p>
+                    <p><span>@ViewBag.SoNguoi_DcTheoDoi</span> following</p>
+                </div>
+                
+                <p class="desc" id="tieu_Su">
+                    @ViewBag.nguoiD.TieuSu
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <hr style="margin-bottom:15px">
+
+    <!--***** posts_container start ****** -->
+        <div class="main_section">
+            <div class="posts_container">
+            <div class="posts" id="posts">
+                @foreach (var baiViet in reversedBaiViets)
+                {
+                    <div class="post" id="post-@baiViet.MaBaiViet">
+                        <div class="info">
+                            <div class="person">
+                                <img src="@Url.Content(baiViet.AnhDaiDien)">
+                                <a>@baiViet.TenNguoiDung</a>
+                                <span class="circle">.</span>
+                                <span>@baiViet.NgayTao.ToString()</span>
+                                <br />
+                                <span style="margin-left: 35px; font-size: small; position: relative; top: -10px;">@baiViet.TenLoaiMonAn</span>
+                            </div>
+                            <div class="more" onmouseover="showMenu(@baiViet.MaBaiViet)" onmouseout="hideMenu(@baiViet.MaBaiViet)">
+                                <img src="../LayoutTrangChu/img/show_more.png" alt="show more">
+                                <div class="menu-content" id="menuContent_@baiViet.MaBaiViet">
+                                    <button onclick="editForm(@baiViet.MaBaiViet)">Sửa</button>
+                                    <button onclick="deleteItem(@baiViet.MaBaiViet)">Xóa</button>
+                                </div>
+                            </div>
+                        </div>
+                        @if (!string.IsNullOrEmpty(baiViet.AnhBaiViet))
+                        {
+                            <div class="image">
+                                <img src="@baiViet.AnhBaiViet">
+                            </div>
+                        }
+                        <div class="desc">
+                            <div class="icons">
+                                <div class="icon_left d-flex">
+                                    <div class="like">
+                                        @if (baiViet.IsLiked)
+                                        {
+                                            <img class="not_loved hide_img button_like" data-mabaiviet="@baiViet.MaBaiViet" data-tennguoidung="@baiViet.MaNguoiDung" src="../LayoutTrangChu/img/love.png">
+                                            <img class="loved display button_like" data-mabaiviet="@baiViet.MaBaiViet" data-tennguoidung="@baiViet.MaNguoiDung" src="../LayoutTrangChu/img/heart.png">
+                                        }
+                                        else
+                                        {
+                                            <img class="not_loved button_like" data-mabaiviet="@baiViet.MaBaiViet" data-tennguoidung="@baiViet.MaNguoiDung" src="../LayoutTrangChu/img/love.png">
+                                            <img class="loved hide_img button_like" data-mabaiviet="@baiViet.MaBaiViet" data-tennguoidung="@baiViet.MaNguoiDung" src="../LayoutTrangChu/img/heart.png">
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="liked">
+                                <a class="bold" id="like-count-@baiViet.MaBaiViet">@baiViet.SoLuongLike likes</a>
+                            </div>
+                            <div class="post_desc">
+                                <p>
+                                    <a class="bold" href="#">@baiViet.TenNguoiDung</a> @baiViet.NoiDung
+                                </p>
+                                <p> Comments </p>
+
+                                @* @foreach (var cmt in cmts)
+                                {
+                                    @if (cmt.MaBaiViet == baiViet.MaBaiViet)
+                                    {
+                                        <p>
+                                            <a class="bold" href="#">@cmt.TenNguoiDung</a> @cmt.NoiDung
+                                        </p>
+                                    }
+                                } *@
+                                <div class="comment-section" data-mabaiviet="@baiViet.MaBaiViet" data-tennguoidung="@baiViet.MaNguoiDung">
+                                    <input type="text" class="commentInput" placeholder="Add a comment..." />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                </div>
+            </div>
+        </div> 
+    <!--***** posts_container end ****** -->
+    
+    <!-- form edit profile -->
+    <div class="modal fade" id="editProfile" tabindex="-1" aria-labelledby="editProfilelLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="createModalLabel">Chỉnh sửa thông tin cá nhân</h5>
+                    @* <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="btn_close"></button> *@
+                </div>
+                <div class="modal-body">
+                    <form id="editProfileForm" method="post" enctype="multipart/form-data" action="/TrangCaNhan/editProfile">
+                        <div class="form-group">
+                            <label for="imageUpload" class="form-label">Chọn ảnh đại diện</label>
+                            <input type="file" class="form-control" id="imageUpload" name="image" accept="image/*" onchange="previewImage()">
+                            <div id="imagePreview" class="mt-3"></div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <label for="tenND" class="form-label">Tên người dùng</label>
+                            <input type="text" class="form-control" id="tenND" name="tenND" placeholder="">
+                        </div>
+                        <div class="form-group mt-3">
+                            <label for="tieuSu" class="form-label">Tiểu Sử</label>
+                            <textarea class="form-control" id="tieuSu" name="TieuSu" rows="4" placeholder=""></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer" style="text-align:center">
+                    <button type="button" class="btn btn-primary" onclick="document.getElementById('editProfileForm').submit();">Lưu thay đổi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    let love_icons = document.querySelectorAll(".like");
+    love_icons.forEach(function (icon) {
+        icon.addEventListener("click", function () {
+            let not_loved = icon.querySelector(".not_loved");
+            let loved = icon.querySelector(".loved");
+
+            if (not_loved.classList.contains("hide_img")) {
+                // Nếu "not_loved" đang ẩn, hiện nó và ẩn "loved"
+                not_loved.classList.remove("hide_img");
+                not_loved.classList.add("display");
+
+                loved.classList.remove("display");
+                loved.classList.add("hide_img");
+            } else {
+                // Nếu "not_loved" đang hiện, ẩn nó và hiện "loved"
+                not_loved.classList.remove("display");
+                not_loved.classList.add("hide_img");
+
+                loved.classList.remove("hide_img");
+                loved.classList.add("display");
+            }
+        });
+    });
+
+    $(document).ready(function () {
+
+        $('.button_like').click(function () {
+            var mabaiviet = $(this).data('mabaiviet');
+            var tennguoidung = $(this).data('tennguoidung');
+            // alert(mabaiviet+"_"+tennguoidung)
+
+
+            $.post('/TrangCaNhan/LikeEvent', { mabaiviet: mabaiviet, tennguoidung: tennguoidung }, function (response) {
+                if (response.success) {
+                    //alert('Done');
+                    $('#like-count-' + mabaiviet).text(response.newLikeCount + ' likes');
+                } else {
+                    if (response.message == "F") {
+                        alert('Fail');
+
+                    }
+
+                }
+            });
+        });
+
+
+        $('.comment-section').on('keypress', '.commentInput', function (event) {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // Ngăn chặn hành động mặc định của Enter trong form
+
+                var commentInput = $(this);
+                var comment = commentInput.val();
+                var parentDiv = commentInput.closest('.comment-section');
+                var mabaiviet = parentDiv.data('mabaiviet');
+                var tennguoidung = parentDiv.data('tennguoidung');
+                //alert(comment + "_" + mabaiviet + "_" + tennguoidung);
+                $.post('/TrangCaNhan/AddComment', { comment: comment, mabaiviet: mabaiviet, tennguoidung: tennguoidung }, function (response) {
+                    if (response.success) {
+                        // alert('Comment added');
+                        commentInput.val(''); // Xóa nội dung trường nhập
+
+                        // Thêm bình luận mới vào giao diện
+                        var newComment = '<p><a class="bold" href="#">' + response.tennguoidung + '</a> ' + comment + '</p>';
+                        parentDiv.before(newComment); // Thêm bình luận mới vào trước khối comment-section
+                    } else {
+                        alert('Failed to add comment');
+                    }
+                });
+            }
+        });
+
+    });
+</script>

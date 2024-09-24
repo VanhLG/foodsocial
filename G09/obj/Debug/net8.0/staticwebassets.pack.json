@@ -1,0 +1,949 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\G09.bundle.scp.css",
+      "PackagePath": "staticwebassets\\G09.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\accueil.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\accueil.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\add-friend.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\add-friend.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\bubble-chat.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\bubble-chat.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\check.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\check.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\compass.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\compass.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\edit.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\edit.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\emogi.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\emogi.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\facebook.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\facebook.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\facebook_white.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\facebook_white.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\feed.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\feed.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\foodgo9.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\foodgo9.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\google_play_icon.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\google_play_icon.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\heart.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\heart.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\heart_white.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\heart_white.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\history.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\history.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\img2.jpg",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\img2.jpg"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\info.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\info.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\instagram.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\instagram.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\logo.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\logo.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\logo_menu.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\logo_menu.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\logo_user.jpg",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\logo_user.jpg"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\love.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\love.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\map.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\map.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\menu.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\menu.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\message.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\message.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\microsoft-icon.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\microsoft-icon.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\moon.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\moon.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\music.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\music.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\play-button-arrowhead.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\play-button-arrowhead.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\plus.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\plus.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\problem.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\problem.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\profile_img.jpg",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\profile_img.jpg"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\reglage.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\reglage.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\save-instagram.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\save-instagram.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\save_black.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\save_black.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\search.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\search.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\show_more.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\show_more.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\star.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\star.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\story.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\story.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\tab.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\tab.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\tagged.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\tagged.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\telephone.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\telephone.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\upload.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\upload.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\uploaded_post.gif",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\uploaded_post.gif"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\video.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\video.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\video_call.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\video_call.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\volume-mute.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\volume-mute.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\img\\volume-up.png",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\img\\volume-up.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\js\\trangchu.js",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\js\\trangchu.js"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\owlcarousel\\jquery.min.js",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\owlcarousel\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\owlcarousel\\jquery.min.map",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\owlcarousel\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\owlcarousel\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\owlcarousel\\owl.carousel.min.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\owlcarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\owlcarousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\owlcarousel\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\owlcarousel\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\base\\_base.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\base\\_base.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\base\\_typography.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\base\\_typography.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\components\\_border.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\components\\_border.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\components\\_buttons.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\components\\_buttons.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\components\\_card.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\components\\_card.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\components\\_carousel.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\components\\_carousel.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\components\\_comments.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\components\\_comments.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\components\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\components\\_dropdown.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\components\\_img.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\components\\_img.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\components\\_item.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\components\\_item.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\components\\_model.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\components\\_model.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\components\\_send_message.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\components\\_send_message.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\layout\\_create.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\layout\\_create.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\layout\\_explore.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\layout\\_explore.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\layout\\_followers_container.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\layout\\_followers_container.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\layout\\_home.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\layout\\_home.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\layout\\_login.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\layout\\_login.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\layout\\_messages.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\layout\\_messages.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\layout\\_nav.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\layout\\_nav.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\layout\\_notification_section.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\layout\\_notification_section.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\layout\\_post.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\layout\\_post.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\layout\\_profile.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\layout\\_profile.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\layout\\_reels.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\layout\\_reels.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\layout\\_search_section.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\layout\\_search_section.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\layout\\_sign_up.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\layout\\_sign_up.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\main.css",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\main.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\main.css.map",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\main.css.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\main.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\main.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\utils\\_extensions.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\utils\\_extensions.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\utils\\_mixins.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\utils\\_mixins.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\utils\\_variables.scss",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\utils\\_variables.scss"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\vender\\bootstrap.css",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\vender\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\vender\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\vender\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\vender\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\vender\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\sass\\vender\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\sass\\vender\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\video\\video1.mp4",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\video\\video1.mp4"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\video\\video2.mp4",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\video\\video2.mp4"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\video\\video3.mp4",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\video\\video3.mp4"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\LayoutTrangChu\\video\\video4.mp4",
+      "PackagePath": "staticwebassets\\LayoutTrangChu\\video\\video4.mp4"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\449387853_3448940348684747_6613747166262734902_n.jpg",
+      "PackagePath": "staticwebassets\\Post\\img\\449387853_3448940348684747_6613747166262734902_n.jpg"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\Tra_Thach_Vai.jpg",
+      "PackagePath": "staticwebassets\\Post\\img\\Tra_Thach_Vai.jpg"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\ando\\babakitchen.jpg",
+      "PackagePath": "staticwebassets\\Post\\img\\ando\\babakitchen.jpg"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\ando\\bena.jpg",
+      "PackagePath": "staticwebassets\\Post\\img\\ando\\bena.jpg"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\ando\\bollywood.jpg",
+      "PackagePath": "staticwebassets\\Post\\img\\ando\\bollywood.jpg"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\ando\\mumta.jpg",
+      "PackagePath": "staticwebassets\\Post\\img\\ando\\mumta.jpg"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\ando\\namaste.jpg",
+      "PackagePath": "staticwebassets\\Post\\img\\ando\\namaste.jpg"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\ando\\santi.jpg",
+      "PackagePath": "staticwebassets\\Post\\img\\ando\\santi.jpg"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\ando\\tandoor.jpg",
+      "PackagePath": "staticwebassets\\Post\\img\\ando\\tandoor.jpg"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\anvat\\can.png",
+      "PackagePath": "staticwebassets\\Post\\img\\anvat\\can.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\anvat\\duc.png",
+      "PackagePath": "staticwebassets\\Post\\img\\anvat\\duc.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\anvat\\nem.png",
+      "PackagePath": "staticwebassets\\Post\\img\\anvat\\nem.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\banhmi\\bich.png",
+      "PackagePath": "staticwebassets\\Post\\img\\banhmi\\bich.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\banhmi\\co.png",
+      "PackagePath": "staticwebassets\\Post\\img\\banhmi\\co.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\banhmi\\phuong.png",
+      "PackagePath": "staticwebassets\\Post\\img\\banhmi\\phuong.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\caphe\\cof.png",
+      "PackagePath": "staticwebassets\\Post\\img\\caphe\\cof.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\caphe\\cong.png",
+      "PackagePath": "staticwebassets\\Post\\img\\caphe\\cong.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\caphe\\nguyen.png",
+      "PackagePath": "staticwebassets\\Post\\img\\caphe\\nguyen.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\che\\dien.png",
+      "PackagePath": "staticwebassets\\Post\\img\\che\\dien.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\che\\ky.png",
+      "PackagePath": "staticwebassets\\Post\\img\\che\\ky.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\che\\vy.png",
+      "PackagePath": "staticwebassets\\Post\\img\\che\\vy.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\haisan\\house.png",
+      "PackagePath": "staticwebassets\\Post\\img\\haisan\\house.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\haisan\\pho.png",
+      "PackagePath": "staticwebassets\\Post\\img\\haisan\\pho.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\haisan\\sanho.png",
+      "PackagePath": "staticwebassets\\Post\\img\\haisan\\sanho.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\haisan\\set.png",
+      "PackagePath": "staticwebassets\\Post\\img\\haisan\\set.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\haisan\\ware.png",
+      "PackagePath": "staticwebassets\\Post\\img\\haisan\\ware.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\han.jpg",
+      "PackagePath": "staticwebassets\\Post\\img\\han.jpg"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\hanquoc\\busan.png",
+      "PackagePath": "staticwebassets\\Post\\img\\hanquoc\\busan.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\hanquoc\\fast.png",
+      "PackagePath": "staticwebassets\\Post\\img\\hanquoc\\fast.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\hanquoc\\hanu.png",
+      "PackagePath": "staticwebassets\\Post\\img\\hanquoc\\hanu.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\hanquoc\\tok.png",
+      "PackagePath": "staticwebassets\\Post\\img\\hanquoc\\tok.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\lau\\bo.png",
+      "PackagePath": "staticwebassets\\Post\\img\\lau\\bo.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\lau\\gia.png",
+      "PackagePath": "staticwebassets\\Post\\img\\lau\\gia.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\lau\\phan.png",
+      "PackagePath": "staticwebassets\\Post\\img\\lau\\phan.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\nhat.jpg",
+      "PackagePath": "staticwebassets\\Post\\img\\nhat.jpg"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\nhatban\\deli.png",
+      "PackagePath": "staticwebassets\\Post\\img\\nhatban\\deli.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\nhatban\\dozo.png",
+      "PackagePath": "staticwebassets\\Post\\img\\nhatban\\dozo.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\nhatban\\sachi.png",
+      "PackagePath": "staticwebassets\\Post\\img\\nhatban\\sachi.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\nhatban\\udon.png",
+      "PackagePath": "staticwebassets\\Post\\img\\nhatban\\udon.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\nuong\\ban.png",
+      "PackagePath": "staticwebassets\\Post\\img\\nuong\\ban.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\nuong\\che.png",
+      "PackagePath": "staticwebassets\\Post\\img\\nuong\\che.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\nuong\\king.png",
+      "PackagePath": "staticwebassets\\Post\\img\\nuong\\king.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\pho\\ga.png",
+      "PackagePath": "staticwebassets\\Post\\img\\pho\\ga.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\pho\\hoi.png",
+      "PackagePath": "staticwebassets\\Post\\img\\pho\\hoi.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\pho\\suong.png",
+      "PackagePath": "staticwebassets\\Post\\img\\pho\\suong.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\pizza\\domi.png",
+      "PackagePath": "staticwebassets\\Post\\img\\pizza\\domi.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\pizza\\hung.png",
+      "PackagePath": "staticwebassets\\Post\\img\\pizza\\hung.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\pizza\\tonda.jpg",
+      "PackagePath": "staticwebassets\\Post\\img\\pizza\\tonda.jpg"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\thailan\\cafe.png",
+      "PackagePath": "staticwebassets\\Post\\img\\thailan\\cafe.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\thailan\\happy.png",
+      "PackagePath": "staticwebassets\\Post\\img\\thailan\\happy.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\thailan\\naka.png",
+      "PackagePath": "staticwebassets\\Post\\img\\thailan\\naka.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\thailan\\racha.png",
+      "PackagePath": "staticwebassets\\Post\\img\\thailan\\racha.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\thailan\\tuk.png",
+      "PackagePath": "staticwebassets\\Post\\img\\thailan\\tuk.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\tq\\disum.png",
+      "PackagePath": "staticwebassets\\Post\\img\\tq\\disum.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\tq\\fu.png",
+      "PackagePath": "staticwebassets\\Post\\img\\tq\\fu.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\tq\\kieu.png",
+      "PackagePath": "staticwebassets\\Post\\img\\tq\\kieu.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\tq\\laubo.png",
+      "PackagePath": "staticwebassets\\Post\\img\\tq\\laubo.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\trachanh\\chanh.png",
+      "PackagePath": "staticwebassets\\Post\\img\\trachanh\\chanh.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\trachanh\\layla.png",
+      "PackagePath": "staticwebassets\\Post\\img\\trachanh\\layla.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\trachanh\\mo.png",
+      "PackagePath": "staticwebassets\\Post\\img\\trachanh\\mo.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\trasua\\boba.png",
+      "PackagePath": "staticwebassets\\Post\\img\\trasua\\boba.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\trasua\\cha.png",
+      "PackagePath": "staticwebassets\\Post\\img\\trasua\\cha.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\trasua\\roy.png",
+      "PackagePath": "staticwebassets\\Post\\img\\trasua\\roy.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\trung.jpg",
+      "PackagePath": "staticwebassets\\Post\\img\\trung.jpg"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\vn\\ly.png",
+      "PackagePath": "staticwebassets\\Post\\img\\vn\\ly.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\vn\\nam.png",
+      "PackagePath": "staticwebassets\\Post\\img\\vn\\nam.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\vn\\sec.png",
+      "PackagePath": "staticwebassets\\Post\\img\\vn\\sec.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\y\\la.png",
+      "PackagePath": "staticwebassets\\Post\\img\\y\\la.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\y\\ni.png",
+      "PackagePath": "staticwebassets\\Post\\img\\y\\ni.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\Post\\img\\y\\pa.png",
+      "PackagePath": "staticwebassets\\Post\\img\\y\\pa.png"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\User\\img\\Anh_NewHorizon.jpg",
+      "PackagePath": "staticwebassets\\User\\img\\Anh_NewHorizon.jpg"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\User\\img\\IMG_20210508_093536 (1).jpg",
+      "PackagePath": "staticwebassets\\User\\img\\IMG_20210508_093536 (1).jpg"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\User\\img\\avatar1.jpg",
+      "PackagePath": "staticwebassets\\User\\img\\avatar1.jpg"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\User\\img\\avatar2.jpg",
+      "PackagePath": "staticwebassets\\User\\img\\avatar2.jpg"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\User\\img\\avatar3.jpg",
+      "PackagePath": "staticwebassets\\User\\img\\avatar3.jpg"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\css\\create.css",
+      "PackagePath": "staticwebassets\\css\\create.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\js\\TaoBaiViet.js",
+      "PackagePath": "staticwebassets\\js\\TaoBaiViet.js"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\js\\trangCaNhan.js",
+      "PackagePath": "staticwebassets\\js\\trangCaNhan.js"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\nam3\\WEBNC\\BTL\\phu\\G09\\G09\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.G09.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.G09.props",
+      "PackagePath": "build\\G09.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.G09.props",
+      "PackagePath": "buildMultiTargeting\\G09.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.G09.props",
+      "PackagePath": "buildTransitive\\G09.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

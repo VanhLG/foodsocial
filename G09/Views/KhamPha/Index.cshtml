@@ -1,0 +1,129 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_LayoutTrangChu.cshtml";
+}
+
+@model IEnumerable<BaiViet>
+<div class="second_container">
+    <!--***** posts_container start ****** -->
+    <div class="main_section">
+        <div class="posts_container">
+            <div class="posts">
+                @foreach (var baiViet in Model)
+                {
+                    <div class="post">
+                        <div class="info">
+                            <div class="person">
+                                <img src="@Url.Content(baiViet.AnhDaiDien)">
+                                <a href="#">@baiViet.TenNguoiDung</a>
+                                <span class="circle">.</span>
+                                <span>@baiViet.NgayTao.ToString()</span>
+                            </div>
+                            <div class="more">
+                                <img src="../LayoutTrangChu/img/show_more.png" alt="show more">
+                            </div>
+                        </div>
+                        @if (!string.IsNullOrEmpty(baiViet.AnhBaiViet))
+                        {
+                            <div class="image">
+                                <img src="@baiViet.AnhBaiViet">
+                            </div>
+                        }
+                        <div class="desc">
+                            <div class="icons">
+                                <div class="icon_left d-flex">
+                                    <div class="like">
+                                        <img class="not_loved" src="../LayoutTrangChu/img/love.png">
+                                        <img class="loved" src="../LayoutTrangChu/img/heart.png">
+                                    </div>
+                                    <div class="chat">
+                                        <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#message_modal">
+                                            <img src="../LayoutTrangChu/img/bubble-chat.png" ">
+                                        </button>
+                                    </div>
+                                    <div class="send">
+                                        <button type="button" class="btn p-0" data-bs-toggle="modal" data-bs-target="#send_message_modal">
+                                            <img src="../LayoutTrangChu/img/send.png">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="save not_saved">
+                                    <img class="hide saved" src="../LayoutTrangChu/img/save_black.png">
+                                    <img class="not_saved" src="../LayoutTrangChu/img/save-instagram.png">
+                                </div>
+                            </div>
+                            <div class="liked">
+                                @* <a class="bold" href="#">@baiViet.SoLuongLike likes</a> *@
+                            </div>
+                            <div class="post_desc">
+                                <p>
+                                    @* <a class="bold" href="#">@baiViet.TenNguoiDung</a> *@
+                                    @baiViet.NoiDung
+                                </p>
+                                @* <p><a class="gray" href="#">View all @baiViet.SoLuongBinhLuan comments</a></p> *@
+                                <input type="text" placeholder="Add a comments...">
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+    <!--***** posts_container end ****** -->
+    <!--*****Loai Mon An ****** -->
+    <div class="menukhampha">
+        <div class="header-div-khampha">
+            <span class="header-text">Khám phá</span>
+        </div>
+        <nav class="vertical-menu-khampha">
+            @foreach (var item in ViewBag.LoaiMonAns)
+            {
+                <a href="@Url.Action("Index", "KhamPha", new { loaiMonAnId = item.MaLoaiMonAn })" class="@(item.MaLoaiMonAn == ViewBag.SelectedLoaiMonAnId ? "active" : "")">@item.TenLoaiMonAn</a>
+            }
+        </nav>
+    </div>
+    <!--***** Loai Mon An ****** -->
+
+</div>
+
+
+<style>
+    .menukhampha {
+        width: 250px;
+    }
+
+    .header-div-khampha {
+        display: flex;
+        align-items: center;
+        background-color: black;
+        padding: 15px;
+    }
+
+    .header-text {
+        color: white;
+        font-weight: bold;
+        font-size: 16px; /* Kích thước chữ có thể điều chỉnh */
+    }
+
+    .vertical-menu-khampha {
+        border: 2px solid black;
+    }
+
+        .vertical-menu-khampha a {
+            background-color: white;
+            color: black;
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+        }
+
+            .vertical-menu-khampha a:hover {
+                background-color: black;
+                color: white;
+            }
+
+            .vertical-menu-khampha a.active {
+                background-color: black;
+                color: white;
+            }
+</style>

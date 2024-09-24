@@ -1,0 +1,234 @@
+﻿
+@{
+    ViewData["Title"] = "ListBaiViet";
+    Layout = "~/Views/Shared/_LayoutTrangChu.cshtml";
+    NguoiDung us = ViewBag.us;
+    var cmts = ViewBag.cmts;
+    
+}
+
+@model IEnumerable<BaiViet>
+@Html.AntiForgeryToken()
+
+    <!--***** posts_container start ****** -->
+    <div class="second_container">
+           <div class="main_section">
+   
+    <div class="posts_container">
+        <div class="posts">
+            @foreach (var baiViet in Model)
+            {    
+                    <div class="post" id="post-@baiViet.MaBaiViet">
+                    <div class="info">
+                        <div class="person">
+                            <img src="@Url.Content(baiViet.AnhDaiDien)">
+
+                                <a href="@Url.Action("K_TrangCaNhan", "TrangCaNhan", new { id =  @baiViet.MaNguoiDung})">@baiViet.TenNguoiDung</a>
+                            <span class="circle">.</span>
+                            <span>@baiViet.NgayTao.ToString()</span>
+                            <br/>
+                        <span style="margin-left: 35px; font-size: small; position: relative; top: -10px;">@baiViet.TenLoaiMonAn</span>
+                    </div>
+                        <div class="more">
+                            <img src="../LayoutTrangChu/img/show_more.png" alt="show more">
+                        </div>
+                    </div>
+                    @if (!string.IsNullOrEmpty(baiViet.AnhBaiViet))
+                    {
+                        <div class="image">
+                            <img src="@baiViet.AnhBaiViet">
+                        </div>
+                    }
+                    <div class="desc">
+                        <div class="icons">
+                            <div class="icon_left d-flex">
+                                <div class="like">
+                                    @if (baiViet.IsLiked)
+                                    {
+                                        <img class="not_loved hide_img button_like" data-mabaiviet="@baiViet.MaBaiViet" data-tennguoidung="@baiViet.MaNguoiDung" src="../LayoutTrangChu/img/love.png">
+                                        <img class="loved display button_like" data-mabaiviet="@baiViet.MaBaiViet" data-tennguoidung="@baiViet.MaNguoiDung" src="../LayoutTrangChu/img/heart.png">
+                                    }
+                                    else
+                                    {
+                                        <img class="not_loved button_like" data-mabaiviet="@baiViet.MaBaiViet" data-tennguoidung="@baiViet.MaNguoiDung" src="../LayoutTrangChu/img/love.png">
+                                        <img class="loved hide_img button_like" data-mabaiviet="@baiViet.MaBaiViet" data-tennguoidung="@baiViet.MaNguoiDung" src="../LayoutTrangChu/img/heart.png">
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                        <div class="liked">
+                            <a class="bold" id="like-count-@baiViet.MaBaiViet">@baiViet.SoLuongLike likes</a>
+                        </div>
+                        <div class="post_desc">
+                            <p>
+                                <a class="bold" href="#">@baiViet.TenNguoiDung</a> @baiViet.NoiDung
+                            </p>
+                            <p> Comments </p>
+
+                            @foreach (var cmt in cmts)
+                            {
+                                @if (cmt.MaBaiViet == baiViet.MaBaiViet)
+                                {
+                                    <p>
+                                        <a class="bold" href="#">@cmt.TenNguoiDung</a> @cmt.NoiDung
+                                    </p>
+                                }
+                            }
+                            <div class="comment-section" data-mabaiviet="@baiViet.MaBaiViet" data-tennguoidung="@baiViet.MaNguoiDung">
+                                <input type="text" class="commentInput" placeholder="Add a comment..." />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+    <!--***** posts_container end ****** -->
+    <!--***** followers_container start ****** -->
+<div class="followers_container">
+    <div>
+        <div class="cart">
+            <div>
+                <div class="img">
+                    <img src="../LayoutTrangChu/img/profile_img.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p class="name">Zineb_essoussi</p>
+                    <p class="second_name">Zim Ess</p>
+                </div>
+            </div>
+            <div class="switch">
+                <a href="#">Switch</a>
+            </div>
+        </div>
+        <div class="suggestions">
+            <div class="title">
+                <h4>Suggestions for you</h4>
+                <a class="dark" href="#">See All</a>
+            </div>
+            <div class="cart">
+                <div>
+                    <div class="img">
+                        <img src="../LayoutTrangChu/img/profile_img.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="name">Zineb_essoussi</p>
+                        <p class="second_name">Zim Ess</p>
+                    </div>
+                </div>
+                <div class="switch">
+                    <button class="follow_text" href="#">follow</button>
+                </div>
+            </div>
+            <div class="cart">
+                <div>
+                    <div class="img">
+                        <img src="../LayoutTrangChu/img/profile_img.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="name">Zineb_essoussi</p>
+                        <p class="second_name">Zim Ess</p>
+                    </div>
+                </div>
+                <div class="switch">
+                    <button class="follow_text" href="#">follow</button>
+                </div>
+            </div>
+            <div class="cart">
+                <div>
+                    <div class="img">
+                        <img src="../LayoutTrangChu/img/profile_img.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="name">Zineb_essoussi</p>
+                        <p class="second_name">Zim Ess</p>
+                    </div>
+                </div>
+                <div class="switch">
+                    <button class="follow_text" href="#">follow</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--***** followers_container end ****** -->
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    let love_icons = document.querySelectorAll(".like");
+    love_icons.forEach(function (icon) {
+        icon.addEventListener("click", function () {
+            let not_loved = icon.querySelector(".not_loved");
+            let loved = icon.querySelector(".loved");
+
+            if (not_loved.classList.contains("hide_img")) {
+                // Nếu "not_loved" đang ẩn, hiện nó và ẩn "loved"
+                not_loved.classList.remove("hide_img");
+                not_loved.classList.add("display");
+
+                loved.classList.remove("display");
+                loved.classList.add("hide_img");
+            } else {
+                // Nếu "not_loved" đang hiện, ẩn nó và hiện "loved"
+                not_loved.classList.remove("display");
+                not_loved.classList.add("hide_img");
+              
+                loved.classList.remove("hide_img");
+                loved.classList.add("display");
+            }
+        });
+    });
+
+    $(document).ready(function () {
+
+        $('.button_like').click(function () {
+            var mabaiviet = $(this).data('mabaiviet');
+            var tennguoidung = $(this).data('tennguoidung');
+           // alert(mabaiviet+"_"+tennguoidung)
+            
+
+            $.post('/TrangChu/LikeEvent', { mabaiviet: mabaiviet, tennguoidung: tennguoidung }, function (response) {
+                if (response.success) {
+                    //alert('Done');
+                    $('#like-count-' + mabaiviet).text(response.newLikeCount + ' likes');
+                } else {
+                    if (response.message == "F") {
+                        alert('Fail');
+
+                    }
+
+                }
+            });
+        });
+
+
+        $('.comment-section').on('keypress', '.commentInput', function (event) {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // Ngăn chặn hành động mặc định của Enter trong form
+
+                var commentInput = $(this);
+                var comment = commentInput.val();
+                var parentDiv = commentInput.closest('.comment-section');
+                var mabaiviet = parentDiv.data('mabaiviet');
+                var tennguoidung = parentDiv.data('tennguoidung');
+                //alert(comment + "_" + mabaiviet + "_" + tennguoidung);
+                $.post('/TrangChu/AddComment', { comment: comment, mabaiviet: mabaiviet, tennguoidung: tennguoidung }, function (response) {
+                    if (response.success) {
+                       // alert('Comment added');
+                        commentInput.val(''); // Xóa nội dung trường nhập
+
+                        // Thêm bình luận mới vào giao diện
+                        var newComment = '<p><a class="bold" href="#">' + response.tennguoidung + '</a> ' + comment + '</p>';
+                        parentDiv.before(newComment); // Thêm bình luận mới vào trước khối comment-section
+                    } else {
+                        alert('Failed to add comment');
+                    }
+                }); 
+            }
+        });
+
+    });
+</script>
